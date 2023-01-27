@@ -121,7 +121,7 @@ header{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
   }
   .menu__btn > span::before {
     content: '';
@@ -257,7 +257,7 @@ main{
 }
 .example_work{
      margin-top: 60px;
-     margin-left: 40px;
+     margin-left: 10px;
      margin-right: auto;
  }
  .example_work h3{

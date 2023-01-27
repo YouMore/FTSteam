@@ -22,6 +22,18 @@ body{
     opacity: 1;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08)
 }
+
+@media screen and (max-width: 1300px) and (min-width: 700px){
+    .card_registration{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 699px){
+    .card_registration{
+        width: 50%;
+    }
+}
+
 .card_registration_title{
     margin-top: 0%;
     color: rgb(255, 255, 255);

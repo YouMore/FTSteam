@@ -135,7 +135,7 @@ header{
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #000000;
+    background-color: #ffffff;
   }
   .menu__btn > span::before {
     content: '';

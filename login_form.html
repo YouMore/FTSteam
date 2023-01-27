@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='yes' name='apple-mobile-web-app-capable'/><!--позволяет странице работать в полноэкранном режиме у мобильных устройств Apple-->
+    <title> FTSteam </title>
+    <link rel="icon" type="image/png" href="/photo/ikonka.png"><!--Маленькая иконка-->
+    <link rel="stylesheet" href="login_form.css">
+  </head>
+  <body>
+    <div class="common_block">
+      <div class="card_registration">
+        <span class="square1"></span>
+        <span class="square2"></span>
+        <form method="post">
+            <h2 class="card_registration_title">Логин</h2>
+            <p>
+              <input type="email" id="pochta" name="pochta" placeholder="Почта" required>
+            </p>
+            <p>
+              <input type="password" minlength="3" maxlength="8" id="password" name="password" placeholder="Пароль" required>
+            </p>
+            <p>
+              <button type="submit" class="registration_btn">Войти</button>
+            </p>
+            <a class="reg-log-main" href="registration_form.html"><p >Регистрация</p></a>
+            <a class="reg-log-main" href="index.html"><p >Вернуться на главную</p></a>
+            <div class="social"> 
+              <div class="soc_seti">
+                <a href="https://t.me/+VH_oee6Tl440NTky"><img class="photo_soc_seti" src="/photo/telegram.png" height="50%"></a>
+              </div>
+              <div class="soc_seti">
+                <a href="https://vk.com/public217722275"><img class="photo_soc_seti" src="/photo/vk.png" height="50%"></a>
+              </div>
+              <div class="soc_seti">
+                <a href="login_form.html"><img class="photo_soc_seti" src="/photo/instagram.png" height="50%"></a>
+              </div>
+            </div>
+        </form>
+    </div>
+    </div>
+  </body>
+</html>

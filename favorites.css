@@ -1,0 +1,369 @@
+/*-------------------------HEADER--------------------------------------*/
+@media screen and (min-width: 700px){
+    .hamburger-menu{
+        display: none;
+    }
+    .bigmenu{
+        display: normal;
+    }
+}
+header{
+    background:hsl(0, 2%, 20%,0.7);
+    color:rgb(255, 255, 255);
+    width: 100%;
+    height: 75px;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+}
+/*---------------Audio Player----------------------------------------*/
+#controls{
+    width: 160px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: calc(50% - 80px);
+}
+.audio-track {
+    width: 150px;
+    height: 3px;
+    background-color: #000000;
+    margin: 10px 0;
+}
+.time {
+    width: 0;
+    height: 3px;
+    background-color: aliceblue;
+}
+.common_photo_player{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-right: 13%;
+}
+.photo_player_prev, .photo_player_play, .photo_player_next{
+    width: 30px;
+    height: 30px;
+    background:hsl(0, 2%, 20%,0.7);
+    border-radius: 50%;
+}
+
+/*---------ICON IN HEADER---------------*/
+.pages_header{
+    padding-top: 20px;
+    float: right;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.icon_in_header{
+    position: relative;
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.779);
+    z-index: 0;
+    margin-right: 30px;
+}
+.photo_soc_seti {
+    margin-top: 25%;
+    z-index:2;
+}
+.icon_in_header:hover {
+    scale: 1.1;
+}
+.favourites-number{
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    right: -10px;
+}
+/*---------ICON IN HEADER END---------------*/
+#avatarvshapke{
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.icon_page:hover{
+    scale:1.1;
+}
+@media screen and (max-width: 700px){
+    .hamburger-menu{
+        display: normal;
+    }
+    .bigmenu{
+        display: none;
+    }
+}
+/*-----------------BURGER MENU-----------------------*/
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color:hsl(0, 0%, 29%);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(28, 28, 28);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
+}
+/*-------------BURGER MENU END-----------------------------------*/
+/*-------------------------HEADER--------------------------------------*/
+/*-------------------------BODY AND MAIN------------------------------------*/
+body{
+    background:hsla(0, 3%, 17%, 0.851);
+    width: 100%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/photo/background_phones.jpg");
+    background-attachment: fixed;
+}
+main{
+    width: 85%;
+    height: auto;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    top: -2em;
+    padding-top:2%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+}
+main h2, h3{
+    color: aliceblue;
+}
+main h2{
+    text-align: center;
+}
+main h3{
+    text-align: center;
+}
+.all_music{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.common_block{
+    margin: 9px;
+    padding: 10px;
+    width: 400px;
+    height: auto;
+    border: 1px  solid #000000;
+    background: hsl(0, 2%, 20%,0.7);
+    color: #ffffff;
+    border-radius: 20px;
+}
+.common_name_music{
+    display: flex;
+    margin-bottom: 10px;
+}
+.photo_vinil{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.music{
+    width: 75%;
+}
+.audio_like{
+    display: flex;
+    align-items: center;
+}
+.block_like{
+    position: relative;
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: rgb(117, 41, 41);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.779);
+    z-index: 0;
+    margin-left: 2%;
+}
+.block_not_like{
+    position: relative;
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.779);
+    z-index: 0;
+    margin-left: 2%;
+}
+.like {
+    margin-top: 25%;
+    z-index:2;
+}
+/*--------------------------Footer---------------------------*/
+footer{
+    background:hsl(0, 2%, 20%,0.7);
+    color:rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    top: 0%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.footer_block{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about_us{
+    height: auto;
+    width: 300px;
+}
+.link_foot{
+    height: auto;
+    width: 200px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+}
+.contact h3{
+    margin-left: 45px;
+}
+.icon_in_foot{
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.779);
+    z-index: 0;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.adres{
+    display: flex;
+    justify-content: center;
+}
+.telefon{
+    display: flex;
+    justify-content: center;
+}
+.pochta{
+    display: flex;
+    justify-content: center;
+}
+.text_foot{
+    height: auto;
+    width: 150px;
+}
+a{
+  text-decoration: none;
+  color:rgb(255, 255, 255)
+}
+/*------------------------END FOOTER-------------------------*/

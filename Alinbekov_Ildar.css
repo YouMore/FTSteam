@@ -236,7 +236,8 @@ main{
     width: 300px;
     height: 406px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.779);
 }
 .cotainer {
@@ -250,7 +251,8 @@ main{
 }
 .photo{ 
     margin-top: 0%;
-    margin-left: 0%;
+    margin-left: auto;
+    margin-right: auto;
  }
  .information{
     margin-top: 30px;
@@ -258,7 +260,7 @@ main{
     margin-right: auto;
     padding-right: 3%;
     font-size: 1.3em;
-    width: 65%;
+    width: 70%;
     color: rgb(208, 255, 0);
     background:hsl(0, 0%, 0%,0.8);
     border-radius: 10px;
@@ -266,18 +268,17 @@ main{
  @media screen and (max-width: 1300px){
      .information {
          margin-top: 60px;
-         margin-left: 50px;
      }
  }
  .example_work{
     margin-top: 50px;
-    margin-left: 40px;
+    margin-left: auto;
     margin-right: auto;
  }
 .common_music_avtor{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .common_block{
     margin: 9px;

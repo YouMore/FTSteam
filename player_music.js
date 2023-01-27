@@ -30,11 +30,11 @@ window.onload = function() {
 
 function switchTreck (numTreck) {
     // Меняем значение атрибута src
-    audio.src = '/audio/' + playlist[numTreck];
+    audio.src = 'audio/' + playlist[numTreck];
     // Назначаем время песни ноль
     audio.currentTime = 0;
     // Включаем песню
-    btnPlay.src = '/photo/pause.png';// меняет картинку на play
+    btnPlay.src = 'photo/pause.png';// меняет картинку на play
     pauseOrPlay = false;
     audio.play();
 }
@@ -42,7 +42,7 @@ function switchTreck (numTreck) {
 btnPlay.addEventListener("click", function() {
     if (pauseOrPlay == true) {
         audio.play(); // Запуск песни
-        btnPlay.src = '/photo/pause.png';//смена картинку на pause
+        btnPlay.src = 'photo/pause.png';//смена картинку на pause
         pauseOrPlay = false;
         // Запуск интервала
         let audioPlay = setInterval(function () {
@@ -66,7 +66,7 @@ btnPlay.addEventListener("click", function() {
     }
     else {
         audio.pause(); // Останавливает песню
-        btnPlay.src = '/photo/play.png';// меняет картинку на play
+        btnPlay.src = 'photo/play.png';// меняет картинку на play
         //clearInterval(audioPlay); // Останавливает интервал
         pauseOrPlay = true;
     }

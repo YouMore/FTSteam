@@ -26,8 +26,6 @@ function nextSlide() {
 function prevSlide() {
     drawNewSlide(numberSlide -= 1);
 }
-/* Устанавливает текущий слайд */
 function currentSlide(n) {
     drawNewSlide(numberSlide = n);
 }
-/* Основная функция слайдера */
